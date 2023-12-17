@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { ChakraProvider, Flex } from "@chakra-ui/react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/HomeComponent/Home";
+import ViewResume from "./components/ViewComponent/ViewResume";
+import { Form } from "./components/FormComponent/Form";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider>
+      <BrowserRouter>
+      <Flex flexDirection={'column'} align={'center'}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create-resume" element={<Form />} />
+        <Route path="/edit-resume/:id" element={<Form />} />
+        <Route path="/view-resume/:id" element={<ViewResume/>} />
+      </Routes></Flex>
+    </BrowserRouter>
+    </ChakraProvider>
   );
 }
 

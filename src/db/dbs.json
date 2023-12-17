@@ -1,0 +1,238 @@
+{
+  "api": [
+    {
+      "id": "ab63c2f9-aa12-4946-ad4e-be4b61506624",
+      "resume": {
+        "profileValue": {
+          "fullName": "Narayan Kumar Choudhary",
+          "current_Designation": "Engineer",
+          "location": "Pune, India",
+          "email": "Narayan.choudhary@gmail.com",
+          "phone_No": "879698765",
+          "website": "https://new.pauy.data"
+        },
+        "aboutMe": "this is about me and my work",
+        "education": [
+          {
+            "institution": "NS Pubilc school",
+            "academics": "School",
+            "fieldOfStudy": "Science",
+            "graduationYear": "2013",
+            "additionalInformation": "Pass 1st division"
+          },
+          {
+            "institution": "Gandhi Public School",
+            "academics": "College",
+            "fieldOfStudy": "Science",
+            "graduationYear": "2015",
+            "additionalInformation": "Pass 1st division"
+          },
+          {
+            "institution": "Rajiv Gandhi Engineering collage",
+            "academics": "University",
+            "fieldOfStudy": "Civil Engineering",
+            "graduationYear": "2019",
+            "additionalInformation": "Pass 1st division"
+          }
+        ],
+        "exprince": [
+          {
+            "designation": "Intern",
+            "company": "JP Infortenment",
+            "startDate": "2021-01-02",
+            "endDate": "2021-12-31",
+            "role": "work on webdevelopment part and learn html, css, js, react,vue,next,node etc"
+          },
+          {
+            "designation": "Engineer",
+            "company": "JP infortenment",
+            "startDate": "2022-01-01",
+            "endDate": "2022-12-31",
+            "role": "work as engineer and lead 5 interns"
+          },
+          {
+            "designation": "SDE-1",
+            "company": "VR Infrortenment ltd",
+            "startDate": "2023-01-01",
+            "endDate": "2023-12-17",
+            "role": "Work As sde-1 and lead 5 engineer"
+          }
+        ],
+        "project": [
+          {
+            "name": "Weather App",
+            "duration": "10days",
+            "url": "https://weather.com",
+            "description": "Give real time data"
+          },
+          {
+            "name": "Calculator",
+            "duration": "1 week",
+            "url": "https://calc.url.com",
+            "description": "Use to do math"
+          }
+        ],
+        "skills": [
+          {
+            "skill": "html",
+            "rating": 5
+          },
+          {
+            "skill": "css",
+            "rating": 5
+          },
+          {
+            "skill": "js",
+            "rating": 5
+          },
+          {
+            "skill": "React",
+            "rating": 5
+          },
+          {
+            "skill": "Vue.js",
+            "rating": 5
+          },
+          {
+            "skill": "Next js",
+            "rating": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "3c3fe50b-e4a2-40ca-aeb7-73fb4b5642d8",
+      "resume": {
+        "profileValue": {
+          "fullName": "Raju Kumar Choudhary",
+          "current_Designation": "Engineer Manager",
+          "location": "Delhi, India",
+          "email": "raju.choudhary@gmail.com",
+          "phone_No": "7878654321",
+          "website": "www.rajuportpoliyo.com"
+        },
+        "aboutMe": "I am raju very hardworking man i am working as engineer manger at info tech ltd . I am handlaning more than 25 people team.",
+        "education": [
+          {
+            "institution": "NS Pubilc school",
+            "academics": "School",
+            "fieldOfStudy": "Science",
+            "graduationYear": "2011",
+            "additionalInformation": "Pass with 1st division"
+          },
+          {
+            "institution": "Gandhi Public School",
+            "academics": "College",
+            "fieldOfStudy": "Science",
+            "graduationYear": "2013",
+            "additionalInformation": "Pass with 1st division"
+          },
+          {
+            "institution": "Raman Engineering Collage",
+            "academics": "University",
+            "fieldOfStudy": "Civil Engineering",
+            "graduationYear": "2017",
+            "additionalInformation": "Pass with 1st division"
+          }
+        ],
+        "exprince": [
+          {
+            "designation": "Engineer Manager",
+            "company": "JP Infortenment",
+            "startDate": "2023-01-01",
+            "endDate": "2023-12-18",
+            "role": "Working as lead and haldlling more than 25 people team."
+          }
+        ],
+        "project": [
+          {
+            "name": "Watch",
+            "duration": "1 week",
+            "url": "https://eatch.com",
+            "description": "added description"
+          }
+        ],
+        "skills": [
+          {
+            "skill": "Html",
+            "rating": 4
+          },
+          {
+            "skill": "CSS",
+            "rating": 5
+          },
+          {
+            "skill": "React",
+            "rating": 5
+          },
+          {
+            "skill": "JS",
+            "rating": 5
+          },
+          {
+            "skill": "Next js",
+            "rating": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "f86073ee-d403-41d8-9a0f-4f5c2db1d93b",
+      "resume": {
+        "profileValue": {
+          "fullName": "Pratyush Kumar",
+          "current_Designation": "Engineer",
+          "location": "Delhi,India",
+          "email": "pratyush.kr@gmail.com",
+          "phone_No": "8787654433",
+          "website": "www.pratyshkr_portpoliyo.com"
+        },
+        "aboutMe": "I am very good at coummination and bilding team.",
+        "education": [
+          {
+            "institution": "NS Pubilc school",
+            "academics": "School",
+            "fieldOfStudy": "Science",
+            "graduationYear": "2011",
+            "additionalInformation": "I pass with 1st division"
+          }
+        ],
+        "exprince": [
+          {
+            "designation": "Engineer",
+            "company": "EM",
+            "startDate": "2023-01-17",
+            "endDate": "2023-12-17",
+            "role": "Work as inter lead and frontend developer"
+          }
+        ],
+        "project": [
+          {
+            "name": "Weather App",
+            "duration": "1 week",
+            "url": "https://weather.com",
+            "description": "This show the real time data"
+          }
+        ],
+        "skills": [
+          {
+            "skill": "html",
+            "rating": 5
+          },
+          {
+            "skill": "css",
+            "rating": 5
+          },
+          {
+            "skill": "js",
+            "rating": 5
+          },
+          {
+            "skill": "React",
+            "rating": 5
+          }
+        ]
+      }
+    }
+  ]
+}

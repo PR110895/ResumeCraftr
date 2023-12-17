@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was chakraui with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -19,52 +19,30 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `npm i`
+ 
+ For start the app in local you should do npm i.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ### `Resumecraft`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ This app is build for crate resume, update,view and delete resume.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ This app have `Create Resume` button on home in top with which you can create a resume and below this there is list of resume shown on which there are three feature `view` ,`edit` ,`delete` for this feacture i add icons and all these feature is working.
 
-### `npm run eject`
+ ### `Description`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ 1. I use `chakra ui` for creating component beacuse i done have much time to write custom css and html.
+ 2. For id i use `uuid` package.
+ 3. For `icon` i use `chara-icon`.
+ 4. For `routing` i use react router dom package.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Feature Scope`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. We can add proper validation for every page.
+2. For storage we are using db json package but in later can shift it to backend.
+3. We did not add loder or spinner for now we can add it later.
+4. In future we can make it more flaxible and add many more feilds and also can use batter color and make a batter ui to.
+5. we can add many more feature like `print` `shere` and many more feasture.
+6. we can add unit test and intrigation test.
+7. we can add user validation and secure our create,edit,delete route with user route protector.
+8. We can add image storage and many more thing.
