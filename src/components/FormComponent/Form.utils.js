@@ -19,7 +19,6 @@ import { ModalComponent } from "../ModalComponent/ModalComponent";
 import { CloseIcon, StarIcon } from "@chakra-ui/icons";
 
 export const Profile = ({ setProfileValue, profileValue }) => {
-
   const onChangeHandler = (event) => {
     event.preventDefault();
     setProfileValue((oldState) => ({
@@ -131,7 +130,7 @@ export const AboutMe = ({ setProfileFormValue, profileFormValue }) => {
   );
 };
 
-export const Education = ({ education }) => {
+export const Education = ({ education, setProfileFormValue }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [educationList, setEducationList] = useState([]);
   const modalSizes = useBreakpointValue({
@@ -143,7 +142,17 @@ export const Education = ({ education }) => {
   });
   const removeEducation = (institution) => {
     const list = education.filter((item) => item.institution !== institution);
-    education.push(list);
+    if (list.length > 0) {
+      setProfileFormValue((oldState) => ({
+        ...oldState,
+        education: list,
+      }));
+    } else {
+      setProfileFormValue((oldState) => ({
+        ...oldState,
+        education: [],
+      }));
+    }
     setEducationList(list);
   };
   useEffect(() => {
@@ -331,7 +340,7 @@ const AcademicDetailsForm = ({ educationList, setIsOpen }) => {
   );
 };
 
-export const Experince = ({ exprince }) => {
+export const Experince = ({ exprince, setProfileFormValue }) => {
   const [exprinceList, setExprinceList] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const modalSizes = useBreakpointValue({
@@ -343,7 +352,17 @@ export const Experince = ({ exprince }) => {
   });
   const removeExprince = (company) => {
     const list = exprince.filter((item) => item.company !== company);
-    exprince.push(list);
+    if (list.length > 0) {
+      setProfileFormValue((oldState) => ({
+        ...oldState,
+        exprince: list,
+      }));
+    } else {
+      setProfileFormValue((oldState) => ({
+        ...oldState,
+        exprince: [],
+      }));
+    }
     setExprinceList(list);
   };
   useEffect(() => {
@@ -504,6 +523,7 @@ const ExperinceDetailsForm = ({ experinceList, setIsOpen }) => {
           bg={"transparent"}
           color={"#4F44E0"}
           width={"25%"}
+          onClick={handleSubmit}
           isDisabled={
             exprinceDetails.designation === "" ||
             exprinceDetails.company === "" ||
@@ -519,7 +539,7 @@ const ExperinceDetailsForm = ({ experinceList, setIsOpen }) => {
   );
 };
 
-export const Project = ({ project }) => {
+export const Project = ({ project, setProfileFormValue }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [projectList, setProjectList] = useState([]);
   const modalSizes = useBreakpointValue({
@@ -531,10 +551,22 @@ export const Project = ({ project }) => {
   });
   const removeProject = (name) => {
     const list = project.filter((item) => item.name !== name);
-    project.push(list);
+    if (list.length > 0) {
+      setProfileFormValue((oldState) => ({
+        ...oldState,
+        project: list,
+      }));
+    } else {
+      setProfileFormValue((oldState) => ({
+        ...oldState,
+        project: [],
+      }));
+    }
     setProjectList(list);
   };
-  useEffect(()=>{setProjectList(project);},[project])
+  useEffect(() => {
+    setProjectList(project);
+  }, [project]);
   return (
     <>
       <Text fontSize={"18px"} fontWeight={"600"} mt={3}>
@@ -670,6 +702,7 @@ const ProjectDetailsForm = ({ projectList, setIsOpen }) => {
           bg={"transparent"}
           color={"#4F44E0"}
           width={"25%"}
+          onClick={handleSubmit}
           isDisabled={
             projectDetails.description === "" ||
             projectDetails.name === "" ||
@@ -684,7 +717,7 @@ const ProjectDetailsForm = ({ projectList, setIsOpen }) => {
   );
 };
 
-export const SkillAddComponent = ({ skillsList }) => {
+export const SkillAddComponent = ({ skillsList, setProfileFormValue }) => {
   const [skills, setSkills] = useState([]);
   const [currentSkill, setCurrentSkill] = useState("");
   const [rating, setRating] = useState(0);
@@ -718,7 +751,17 @@ export const SkillAddComponent = ({ skillsList }) => {
   const removeSkills = (skill) => {
     const list = skills.filter((item) => item.skill !== skill);
     setSkills(list);
-    skillsList.push(list);
+    if (list.length > 0) {
+      setProfileFormValue((oldState) => ({
+        ...oldState,
+        skills: list,
+      }));
+    } else {
+      setProfileFormValue((oldState) => ({
+        ...oldState,
+        skills: [],
+      }));
+    }
   };
   useEffect(() => {
     setSkills(skillsList);

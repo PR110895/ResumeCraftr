@@ -141,10 +141,10 @@ export const Form = () => {
           setProfileFormValue={setProfileFormValue}
           profileFormValue={profileFormValue}
         />
-        <Education education={profileFormValue.education} />
-        <Experince exprince={profileFormValue.exprince} />
-        <Project project={profileFormValue.project} />
-        <SkillAddComponent skillsList={profileFormValue.skills} />
+        <Education education={profileFormValue.education} setProfileFormValue={setProfileFormValue} />
+        <Experince exprince={profileFormValue.exprince} setProfileFormValue={setProfileFormValue} />
+        <Project project={profileFormValue.project} setProfileFormValue={setProfileFormValue} />
+        <SkillAddComponent skillsList={profileFormValue.skills} setProfileFormValue={setProfileFormValue} />
         {error ? (
           <Text p={2} fontWeight={"600"} fontSize={"16px"} color={"red"}>
             Please fill all feilds with correct data !
